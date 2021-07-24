@@ -1,7 +1,9 @@
 <section class="hero">
   <div class="hero-body">
     <p class="title">
-      Learn Jasmine
+      <a [routerLink]="['/']" class="subtitle">
+        Learn Jasmine
+      </a>
     </p>
     <a [routerLink]="['/about']" class="subtitle">
       About us
@@ -9,12 +11,5 @@
     
   </div>
 </section>
-<section class="section">
-
-<div class="container">
-     <div class="box" *ngFor="let user of users">
-       <app-profile [user]="user"></app-profile>
-  </div>
-  </div>
-</section>
+<router-outlet></router-outlet>
 
