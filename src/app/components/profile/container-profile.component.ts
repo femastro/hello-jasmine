@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { tap } from 'rxjs/operators';
 import { DataService } from 'src/app/data.service';
-import { User } from 'src/app/model/User';
+import { User } from 'src/app/model/user';
+
 
 @Component({
   selector: 'app-container-profile',

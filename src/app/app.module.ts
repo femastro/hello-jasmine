@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContainerProfileModule } from './components/profile/container-profile.module';
 import { SearchModule } from './components/shared/search/search.module';
 
+import { MakeUrlModule } from './pipes/make-url/make-url.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,7 @@ import { SearchModule } from './components/shared/search/search.module';
     ContainerProfileModule,
     AppRoutingModule,
     SearchModule,
+    MakeUrlModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component, Input } from '@angular/core';
-import { User } from 'src/app/model/User';
+import { User } from 'src/app/model/user';
+
 
 @Component({
   selector: 'app-card-profile',
