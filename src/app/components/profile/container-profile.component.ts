@@ -18,7 +18,8 @@ export class ContainerProfileComponent implements OnInit {
     this.getUsers();
   }
 
-  private getUsers():void {
+  getUsers():void {
+    console.log('service ->', this.dataSvc);
     this.dataSvc.getAllUsers()
     .pipe(
       tap((users: User[]) => this.users = users)

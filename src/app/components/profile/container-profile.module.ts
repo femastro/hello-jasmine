@@ -5,6 +5,7 @@ import { ContainerProfileRoutingModule } from './container-profile-routing.modul
 import { ContainerProfileComponent } from './container-profile.component';
 import { CardProfileComponent } from './card/card-profile.component';
 import { MakeUrlPipe } from 'src/app/pipes/make-url.pipe';
+import { SearchModule } from '../shared/search/search.module';
 
 
 @NgModule({
@@ -15,8 +16,11 @@ import { MakeUrlPipe } from 'src/app/pipes/make-url.pipe';
   ],
   imports: [
     CommonModule,
-    ContainerProfileRoutingModule
+    ContainerProfileRoutingModule,
+    SearchModule
   ],
-  exports:[CardProfileComponent, MakeUrlPipe,]
+  exports:[
+    MakeUrlPipe,
+  ]
 })
 export class ContainerProfileModule { }

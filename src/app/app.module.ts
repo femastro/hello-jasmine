@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContainerProfileModule } from './components/profile/container-profile.module';
-
+import { SearchModule } from './components/shared/search/search.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +18,7 @@ import { ContainerProfileModule } from './components/profile/container-profile.m
     HttpClientModule,
     ContainerProfileModule,
     AppRoutingModule,
+    SearchModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
